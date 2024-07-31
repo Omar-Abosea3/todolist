@@ -19,14 +19,14 @@ body{
 }
 
 .container::-webkit-scrollbar-track {
-    background: #ffffff; 
+    background: transparent; 
     border-radius: 10px; 
 }
 
 .container::-webkit-scrollbar-thumb {
-    background-color: #d161ff;
+    background-color: transparent;
     border-radius: 10px; 
-    border: 2px solid #ffffff; 
+    border: 2px solid transparent; 
 }
 
 .container::-webkit-scrollbar-button {
@@ -35,8 +35,6 @@ body{
 
 
 .container{
-    margin: 70px !important;
-    border: 2px solid white;
     width: 40%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -47,7 +45,6 @@ body{
     border-radius: 12px;
     max-height: 70%;
     overflow-y: scroll;
-    border-right: none;
    
 }
 h1{
