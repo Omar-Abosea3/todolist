@@ -18,7 +18,7 @@ const addTaskToLocalStorage = (task) => {
     let prevTasks = [];
     if(localStorage.getItem('tasks')){
         prevTasks = JSON.parse(localStorage.getItem('tasks'));
-        prevTasks.push(task);
+        prevTasks.unshift(task);
         localStorage.setItem('tasks', JSON.stringify(prevTasks));
     }else{
         prevTasks.push(task);
